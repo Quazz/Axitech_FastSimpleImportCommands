@@ -1,9 +1,9 @@
 {
   "name": "quazz/fastsimpleimportaxitech",
-  "description": "Wrapper for Magento2 ImportExport functionality, which imports products and customers from arrays",
-  "homepage": "https://github.com/Quazz/FireGento_FastSimpleImport2_Demo",
+  "description": "CLI commands for Magento2 ImportExport functionality, which imports products and customers from arrays and csv files",
+  "homepage": "https://github.com/Quazz/Axitech_FastSimpleImportCommands",
   "require": {
-    "php": "~5.6|~7.0|~7.1|~7.2",
+    "php": "~5.6|~7.0|~7.1|~7.2|~7.3",
     "firegento/fastsimpleimport": "*",
     "league/csv": "^9.0"
   },
@@ -20,7 +20,7 @@
       "registration.php"
     ],
     "psr-4": {
-      "FireGento\\FastSimpleImportDemo\\": ""
+      "Axitech\\FastSimpleImportCommands\\": ""
     }
   }
 }
