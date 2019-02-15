@@ -3,8 +3,8 @@
  * Copyright © 2016 FireGento e.V. - All rights reserved.
  * See LICENSE.md bundled with this module for license details.
  */
-namespace FireGento\FastSimpleImportDemo\Console\Command\Product;
-use FireGento\FastSimpleImportDemo\Console\Command\AbstractImportCommand;
+namespace Axitech\FastSimpleImportCommands\Console\Command\Product;
+use Axitech\FastSimpleImportCommands\Console\Command\AbstractImportCommand;
 use Magento\ImportExport\Model\Import;
 /**
  * Class TestCommand
@@ -19,7 +19,7 @@ class DeleteAll extends AbstractImportCommand
 
     protected function configure()
     {
-        $this->setName('fastsimpleimportdemo:products:deleteall')
+        $this->setName('fastsimpleimportcommands:products:deleteall')
             ->setDescription('Delete Products ');
 
         $this->setBehavior(Import::BEHAVIOR_DELETE);
