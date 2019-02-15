@@ -5,9 +5,9 @@
  *  * See LICENSE.md bundled with this module for license details.
  *
  */
-namespace FireGento\FastSimpleImportDemo\Console\Command\Category;
+namespace Axitech\FastSimpleImportCommands\Console\Command\Category;
 
-use FireGento\FastSimpleImportDemo\Console\Command\AbstractImportCommand;
+use Axitech\FastSimpleImportCommands\Console\Command\AbstractImportCommand;
 use Magento\ImportExport\Model\Import;
 
 /**
@@ -21,7 +21,7 @@ class ImportCategory extends AbstractImportCommand
 
     protected function configure()
     {
-        $this->setName('fastsimpleimportdemo:category:import')
+        $this->setName('fastsimpleimportcommands:category:import')
             ->setDescription('Import Category');
 
         $this->setBehavior(Import::BEHAVIOR_APPEND);
