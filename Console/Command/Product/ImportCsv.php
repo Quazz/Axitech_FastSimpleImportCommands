@@ -1,9 +1,9 @@
 <?php
-namespace FireGento\FastSimpleImportDemo\Console\Command\Product;
+namespace Axitech\FastSimpleImportCommands\Console\Command\Product;
 
 use Magento\Framework\Component\ComponentRegistrar;
 use Magento\Framework\App\Filesystem\DirectoryList;
-use FireGento\FastSimpleImportDemo\Console\Command\AbstractImportCommand;
+use Axitech\FastSimpleImportCommands\Console\Command\AbstractImportCommand;
 use Magento\Framework\App\ObjectManagerFactory;
 use Magento\ImportExport\Model\Import;
 use League\Csv\Reader;
@@ -46,7 +46,7 @@ class ImportCsv extends AbstractImportCommand
     protected function configure()
     {
 
-        $this->setName('fastsimpleimportdemo:products:importcsv')
+        $this->setName('fastsimpleimportcommands:products:importcsv')
             ->setDescription('Import Products from CSV');
         $this->setBehavior(Import::BEHAVIOR_ADD_UPDATE);
         $this->setEntityCode('catalog_product');
